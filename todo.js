@@ -13,7 +13,7 @@ removeAll.addEventListener('click', reset);
 function addItem(){
   var input=document.getElementById('input');
   var item=input.value;
-  var textnode=document.createTextNode('item')
+  var textnode=document.createTextNode(item)
 
   if(item === ''){
       return false;
