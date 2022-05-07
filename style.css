@@ -5,15 +5,15 @@ body{
     flex-wrap: wrap;
 }
 #container {
-width: 500px;
-height:100%;
+width: 400px;
+height:auto;
+justify-content: center;
 margin:0 auto;
 text-align: center;
 background: transparent;
-height:765px;
 overflow-y:auto;
-color:aliceblue;
-border:8px solid #01a3a4;
+color:rgb(210, 216, 222);
+border:3px solid #01a3a4;
 border-radius:10px;
 }
 #container h1{
@@ -27,9 +27,9 @@ border-radius:10px;
 }
 #container ul li{
     list-style:none;
-    border:2px solid #b5c5dd;
+    border:2px solid #8fa9d0;
     width:70%;
-    opacity:0;
+    opacity:1;
     transition: opacity 0.5s ease-in-out;
     height:40px;
     margin:5px auto;
@@ -46,17 +46,21 @@ line-height:40px;
 font-size:18px;
 font-family: Arial, Helvetica, sans-serif;
 }
+
 #container ul li #check{
 float:left;
 width:30px;
 height:30px;
 margin:5px;
 -webkit-appearance: none;
-border:2px solid #538ee6;
+border:2px solid #d5e653;
 position:relative;
 outline:0;
 border-radius: 50%;
 
+}
+#container .controls button #add:hover{
+    background-color: rgb(0, 255, 0);
 }
 #container ul li #check:checked:after{
     content:'\2714';
@@ -76,17 +80,20 @@ border-radius: 50%;
    margin:auto;
 }
 #container .controls #input{
-   width:120% absolute;
+   width:300px;
+   display: flex;
+   flex-wrap:wrap;
    align-items: center;
    text-align: center;
    height:35px;
    font-size:20px;
-   background-color: #e4d5d5;
+   background-color: transparent;
    padding-left: 5px;
    box-sizing:border-box;
    margin-bottom:20px;
-   border:4px solid #5887cf;
+   border:4px solid #000000;
    border-radius:10px;
+   color:white
 }
 #container .controls #input:focus{
     outline:0;
@@ -112,16 +119,33 @@ color:white;
     background-color: #2980b9;
     border-radius:10px;
 }
+#container .controls #add:hover{
+    background-color: #04f410;
+    color:white;
+    border-radius:10px;
+}
 #container .controls #remove{
     background-color: #f8a603;
     border-radius:10px;
     margin-top:8px;
+}
+#container .controls #remove:hover{
+    background-color: #04ecf4;
+    color:white;
+    border-radius:10px;
+    opacity: .7;
 }
 #container .controls #reset{
     background-color: #ff1d04;
     border-radius:10px;
     margin-top:8px;
     margin-bottom:20px;
+}
+#container .controls #reset:hover{
+    background-color: #e004f4;
+    color:white;
+    border-radius:10px;
+    opacity: .5;
 }
 #container .mycheck{
     opacity:1;

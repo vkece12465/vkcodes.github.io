@@ -13,13 +13,23 @@ removeAll.addEventListener('click', reset);
 function addItem(){
   var input=document.getElementById('input');
   var item=input.value;
-  var textnode=document.createTextNode(item)
+  var textnode=document.createTextNode('item')
 
   if(item === ''){
       return false;
-  }else{
+      const myNewPara=document.createElement('p');
+      myNewPara.textContent="Enter Your Todo";
+      document.querySelector('body').appendChild(myNewPara);
+      document.querySelector('button').addEventListener('click', (event)=>{
+        event.target.textContent='I was Clicked';
+      });
+      
+        setTimeout(()=>{
+            input.parentNode.insertBefore(pTag, input.nextSibling);
+        },9)
+    }else{
       //create li
-      ul=document.getElementById('list');
+    //   ul=document.getElementById('list');
       li=document.createElement('li')
       //create checkbox
       var checkbox=document.createElement('input')
