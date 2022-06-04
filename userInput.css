@@ -1,0 +1,26 @@
+body{
+    background: rgb(174, 157, 125);
+background: linear-gradient(90deg, rgb(112, 102, 85) 100%, rgba(179,111,182,1) 100%, rgba(80,165,184,1) 100%);
+
+}
+label{
+    display: flex;
+    font-weight: bold;
+    
+    
+}
+p{
+    color: rgb(227, 173, 78);  
+}
+p2{
+    color: rgb(139, 232, 136);
+}
+.container  {
+    width: 400px;
+    height: 600px;
+    display: block;
+    margin-top: 30px;
+  
+    
+}
+
